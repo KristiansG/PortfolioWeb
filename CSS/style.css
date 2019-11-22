@@ -1,0 +1,606 @@
+body {
+    background-image: url(../Imgaes/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    min-height: 550px;
+    max-width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+header {
+    overflow: hidden;
+    background-color: transparent;
+    padding: 20px 10px;
+    border-bottom: 1px solid white;
+}
+
+header a {
+    color: white;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: transparent;
+    border-top: 1px solid white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: transparent;
+    border-top: 1px solid white;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/*------Main-----*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    text-decoration: none;
+    color: white;
+}
+
+.rightLink {
+    background-color: green;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+h1 {
+    color: white;
+    margin: 10px;
+}
+
+h3 {
+    color: white;
+}
+
+p {
+    color: white;
+    position: relative;
+    align-items: top;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row>.column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: transparent;
+    padding: 10px;
+}
+
+.carousel-inner {
+    background-color: transparent;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    border: none;
+    z-index: 1;
+}
+
+.carousel-control-prev-icon {
+    display: block;
+    margin: auto;
+}
+
+.text {
+    color: white;
+    float: center;
+}
+
+.image {
+    float: center;
+    width: 350;
+    height: 300;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.carousel-item p {
+    color: white;
+}
+
+
+/*--Gallery--*/
+
+.slideshow {
+    margin: 0 auto;
+    padding-top: 50px;
+    height: 700px;
+    box-sizing: border-box;
+}
+
+.gallery {
+    margin: auto;
+    width: 200px;
+    perspective: 750px;
+    position: relative;
+    padding-top: 200px;
+}
+
+.gallery-carrousel {
+    width: 100%;
+    position: absolute;
+    float: right;
+    animation: rotar 15s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.gallery-carrousel:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.gallery-carrousel figure {
+    width: 100%;
+    height: 200px;
+    border: 1px solid transparent;
+    overflow: hidden;
+    position: absolute;
+}
+
+.gallery-carrousel figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(300px);
+}
+
+.gallery-carrousel figure:nth-child(2) {
+    transform: rotateY(40deg) translateZ(300px);
+}
+
+.gallery-carrousel figure:nth-child(3) {
+    transform: rotateY(80deg) translateZ(300px);
+}
+
+.gallery-carrousel figure:nth-child(4) {
+    transform: rotateY(120deg) translateZ(300px);
+}
+
+.gallery-carrousel figure:nth-child(5) {
+    transform: rotateY(160deg) translateZ(300px);
+}
+
+.gallery-carrousel figure:nth-child(6) {
+    transform: rotateY(200deg) translateZ(300px);
+}
+
+.gallery-carrousel figure:nth-child(7) {
+    transform: rotateY(240deg) translateZ(300px);
+}
+
+.gallery-carrousel figure:nth-child(8) {
+    transform: rotateY(280deg) translateZ(300px);
+}
+
+.gallery-carrousel figure:nth-child(9) {
+    transform: rotateY(320deg) translateZ(300px);
+}
+
+.images {
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px #000;
+}
+
+.gallery-carrousel img {
+    image-rendering: auto;
+    transition: all 200ms;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-carrousel img:hover {
+    transform: scale(1.1);
+    transition: all 200ms;
+}
+
+@keyframes rotar {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg)
+    }
+}
+
+
+/*---------CHAT------------*/
+
+div.chat {
+    border: 2px solid white;
+    margin: 100px 150px;
+    border-radius: 15px 15px 15px 15px !important;
+}
+
+div.chat-container {
+    width: 100%;
+    height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-bottom: 2px solid white;
+}
+
+div.message-body {
+    padding: 10px;
+}
+
+div.message-container {
+    border-bottom: 1px solid white;
+}
+
+.input {
+    padding: 10px 15px;
+}
+
+#message {
+    width: inherit;
+    height: 60px;
+    background-color: transparent;
+    color: white;
+}
+
+#username {
+    background-color: transparent;
+    color: white;
+}
+
+#sendBtn {
+    position: absolute;
+    border: 1px solid white;
+    color: white;
+    width: 90%;
+    bottom: 8px;
+    right: 10px;
+    border-radius: 15px 15px 15px 15px !important;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.send_btn {
+    border-radius: 15px 15px 15px 15px !important;
+    background-color: white !important;
+    border: 0 !important;
+    color: white !important;
+    cursor: pointer;
+}
+
+.clrBtn {
+    position: absolute;
+    border: 1px solid white;
+    color: white;
+    width: 90%;
+    border-radius: 15px 15px 15px 15px !important;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.msg_cotainer {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    border-radius: 25px;
+    padding: 10px;
+    position: relative;
+}
+
+.output {
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border-radius: 50px 50px 50px 50px;
+    text-align: center;
+    border: 0 !important;
+    color: white !important;
+    height: 30px !important;
+    outline: 0;
+}
+
+.col-md-3 {
+    color: white;
+}
+
+.col-md-10 {
+    color: white;
+}
+
+.date {
+    color: white;
+}
+
+
+/*---SignIn---*/
+
+.login-reg-panel {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 70%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 400px;
+    background-color: transparent;
+}
+
+.white-panel {
+    background-color: transparent;
+    height: 650px;
+    position: absolute;
+    top: -50px;
+    width: 50%;
+    right: calc(50% - 50px);
+    transition: .3s ease-in-out;
+    z-index: 0;
+}
+
+.login-reg-panel input[type="radio"] {
+    position: relative;
+    display: none;
+}
+
+.login-reg-panel {
+    color: white;
+}
+
+.login-reg-panel #label-login,
+.login-reg-panel #label-register {
+    border: 1px solid white;
+    padding: 0 5px;
+    width: 150px;
+    display: block;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.login-info-box {
+    width: 30%;
+    padding: 0 50px;
+    top: 20%;
+    left: 0;
+    position: absolute;
+    text-align: left;
+}
+
+.register-info-box {
+    width: 30%;
+    padding: 0 50px;
+    top: 20%;
+    right: 0;
+    position: absolute;
+    text-align: left;
+}
+
+.right-log {
+    right: 50px !important;
+}
+
+.login-show,
+.register-show {
+    z-index: 1;
+    display: none;
+    opacity: 0;
+    transition: 0.1s ease-in-out;
+    color: white;
+    background-color: transparent;
+    text-align: left;
+    padding: 50px;
+}
+
+.Buttons {
+    border: 1px;
+    background-color: transparent;
+    color: white;
+}
+
+.show-log-panel {
+    display: block;
+    opacity: 0.9;
+}
+
+.login-show input[type="text"],
+.login-show input[type="password"] {
+    width: 100%;
+    display: block;
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 15px 15px 15px 15px !important;
+}
+
+.register-show input[type="text"],
+.register-show input[type="password"],
+.register-show input[type="email"] {
+    width: 100%;
+    display: block;
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 15px 15px 15px 15px !important;
+}
+
+
+/*---AboutUs---*/
+
+.map {
+    width: 500;
+    height: 400;
+    position: relative;
+    left: 700px;
+}
+
+.largeMap {
+    position: relative;
+    left: 600px;
+    color: white;
+}
+
+.Directions {
+    position: relative;
+    left: 800px;
+    color: white
+}
+
+.info {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    left: 700px;
+}
+
+
+/*---Converter---*/
+
+#skaitli {
+    margin: 100px 150px;
+    padding: 15px;
+}
+
+#vardi {
+    margin: 100px 150px;
+    padding: 15px;
+}
+
+#words {
+    color: white;
+    margin: 100px 150px;
+    padding: 15px;
+}
+
+#converter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: transparent;
+    border-top: 1px solid white;
+    text-align: center;
+    font-weight: bold;
+}
+
+#number {
+    background: transparent;
+    color: white;
+    border-radius: 15px 15px 15px 15px !important;
+    text-align: center;
+    outline: none !important;
+}
+
+
+/*---clickerGame---*/
+
+#totalCoins {
+    position: absolute;
+    left: 750px;
+    top: 150px;
+}
+
+#AvaiableCoins {
+    position: absolute;
+    left: 630px;
+    top: 200px;
+}
+
+#click {
+    position: absolute;
+    left: 830px;
+    top: 300px;
+    width: 100px;
+    border-radius: 15px 15px 15px 15px !important;
+    background: transparent;
+    outline: none !important;
+    color: white;
+    text-align: center;
+}
+
+#upgrade {
+    position: absolute;
+    top: 350px;
+}
+
+#upgradeFirst {
+    position: absolute;
+    left: 200px;
+    top: 450px;
+    color: white;
+}
+
+#singleUpgrade {
+    position: absolute;
+    left: 50px;
+    top: 450px;
+    width: 120px;
+    border-radius: 15px 15px 15px 15px !important;
+    background: transparent;
+    outline: none !important;
+    color: white;
+    text-align: center;
+}
+
+#upgradeSecond {
+    position: absolute;
+    left: 1200px;
+    top: 450px;
+    color: white;
+}
+
+#multipleUpgrade {
+    position: absolute;
+    left: 1000px;
+    top: 450px;
+    width: 150px;
+    border-radius: 15px 15px 15px 15px !important;
+    background: transparent;
+    outline: none !important;
+    color: white;
+    text-align: center;
+}
