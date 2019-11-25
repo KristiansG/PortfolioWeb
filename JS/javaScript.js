@@ -199,11 +199,12 @@ function upgradeOne() {
         els.text(incrementedMultiplier);
         elem.text(incrementedPrice);
         ele.text(after);
+        setInterval(incrementFirstNumber, 3000, 'totCoins', 'CoinsToSpend').innerText;
     } else {
         alert("Not Enough Coins");
     }
 
-    setInterval(incrementFirstNumber, 3000, 'totCoins', 'CoinsToSpend').innerText;
+    
 }
 
 function bigUpgrade() {
@@ -221,10 +222,11 @@ function bigUpgrade() {
         els.text(incrementedMultiplier);
         eleme.text(incrementedPrice);
         ele.text(after);
+        setInterval(incrementFirstNumber, 1000, 'totCoins', 'CoinsToSpend').innerText;
     } else {
         alert("Not Enough Coins");
     }
 
 
-    setInterval(incrementFirstNumber, 1000, 'totCoins', 'CoinsToSpend').innerText;
+    
 }
